@@ -1,0 +1,43 @@
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+.jcarousel ul {
+  width: 500%;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jcarousel li {
+  float: left;
+  width: 20%;
+  height: 720px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default;
+}
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  z-index: 3;
+  transition: all .3s ease ;
+}
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.jcarousel-control-prev {
+  left: 12%;
+  top: 47%;
+}
+.jcarousel-control-next {
+  right: 12%;
+  top: 47%;
+}

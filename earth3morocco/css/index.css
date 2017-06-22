@@ -1,0 +1,873 @@
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+.jcarousel ul {
+  width: 500%;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jcarousel li {
+  float: left;
+  width: 20%;
+  height: 720px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default;
+}
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  z-index: 3;
+  transition: all .3s ease ;
+}
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.jcarousel-control-prev {
+  left: 12%;
+  top: 47%;
+}
+.jcarousel-control-next {
+  right: 12%;
+  top: 47%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.productBlock {
+  float: left;
+  overflow: hidden;
+  width: 310px;
+  height: 342px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 11px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+  background-color: #fff;
+}
+.productBlock:hover {
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.productBlock_head {
+  position: relative;
+  width: 100%;
+  height: 213px;
+}
+.productBlock_head img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.productBlock_head_floor {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+.productBlock_head_tip {
+  font-size: 16px;
+  position: absolute;
+  z-index: 6;
+  bottom: 6px;
+  left: 10px;
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
+}
+.productBlock_desc {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  width: 90%;
+  height: 64px;
+  margin-top: 8px;
+  text-align: left;
+  color: #333;
+  border-bottom: 1px solid #e8e8e8;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+.productBlock_desc:hover {
+  text-decoration: underline;
+}
+.produceBlockBottom {
+  width: 100%;
+  padding: 0 14px;
+  text-align: right;
+}
+.productBlock_tip {
+  font-size: 12px;
+  line-height: 24px;
+  display: inline-block;
+  width: 72px;
+  height: 24px;
+  text-align: center;
+  vertical-align: 4px;
+  /*color: @mainColor;
+  border: 1px solid @mainColor;
+  border-radius: 12px;*/
+}
+.productBlock_originPrice {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  margin-right: 8px;
+  margin-left: 60px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+/*.productBlock_originPrice:before
+{
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 47px;
+  height: 1px;
+  content: '';
+  background-color: #999;
+}*/
+.productBlock_price {
+  font-size: 16px;
+  display: inline-block;
+  text-align: right;
+  color: #aaa;
+}
+.productBlock_price span {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 5px;
+  color: #ff7467;
+}
+/*第一部分 第二部分*/
+.morocco-1001 {
+  min-width: 1160px;
+  position: relative;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/bg_1001.jpg") center center / cover;
+  height: 1725px;
+}
+.morocco-1001 .earth_icon {
+  position: absolute;
+  top: 15px;
+}
+.morocco-1001 .content_title {
+  width: 1074px;
+  height: 330px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/morocco_title.png");
+  margin-top: 75px;
+  margin-left: 43px;
+}
+.morocco-1001 .content_desc {
+  width: 665px;
+  height: 113px;
+  padding: 20px;
+  padding-left: 24px;
+  margin-left: 228px;
+  margin-top: 140px;
+  background-color: rgba(8, 3, 2, 0.8);
+  line-height: 24px;
+}
+.morocco-1001 .sixty_second_content {
+  position: relative;
+  width: 1075px;
+  height: 839px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/sixty_second_content.png");
+  margin-top: 165px;
+  margin-left: 43px;
+}
+.morocco-1001 .sixty_second_content .header {
+  font-size: 24px;
+  font-weight: normal;
+  height: 45px;
+  width: 100%;
+}
+.morocco-1001 .sixty_second_content p {
+  line-height: 21px;
+  text-align: justify;
+}
+.morocco-1001 .sixty_second_content .location {
+  position: absolute;
+  width: 173px;
+  height: 170px;
+  top: 64px;
+  left: 107px;
+}
+.morocco-1001 .sixty_second_content .location .header {
+  padding-left: 30px;
+}
+.morocco-1001 .sixty_second_content .casablanca {
+  position: absolute;
+  width: 167px;
+  height: 165px;
+  top: 88px;
+  right: 53px;
+}
+.morocco-1001 .sixty_second_content .garden {
+  position: absolute;
+  width: 150px;
+  height: 170px;
+  bottom: 333px;
+  left: 50px;
+}
+.morocco-1001 .sixty_second_content .garden .header {
+  padding-left: 40px;
+}
+.morocco-1001 .sixty_second_content .visa {
+  position: absolute;
+  width: 154px;
+  height: 154px;
+  left: 343px;
+  bottom: 250px;
+}
+.morocco-1001 .sixty_second_content .visa .header {
+  padding-left: 65px;
+}
+.morocco-1001 .sixty_second_content .sahara_story {
+  position: absolute;
+  width: 153px;
+  height: 154px;
+  right: 288px;
+  bottom: 350px;
+}
+.morocco-1001 .sixty_second_content .best_time {
+  position: absolute;
+  width: 222px;
+  height: 188px;
+  right: 44px;
+  bottom: 73px;
+}
+.morocco-1001 .sixty_second_content .tips {
+  position: absolute;
+  width: 585px;
+  height: 132px;
+  left: 40px;
+  bottom: 17px;
+}
+.morocco-1001 .sixty_second_content .tips p {
+  line-height: 23px;
+}
+.morocco-1001 .sixty_second_content .tips .header {
+  padding-left: 57px;
+}
+/*第五部分 奇幻味蕾begin*/
+.taste {
+  position: relative;
+  height: 1210px;
+  min-width: 1160px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/bg_taste.jpg");
+  /*当到视野范围内时，动画开启，从四面八方而来*/
+}
+.taste li {
+  opacity: 0;
+  position: absolute;
+}
+.taste li .title {
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+.taste li .title span:nth-child(1) {
+  color: #fff59d;
+}
+.taste li p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+.taste .food1_img {
+  width: 351px;
+  height: 351px;
+  left: 458px;
+  top: 60px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food1_img.png");
+}
+.taste .food1_desc {
+  width: 382px;
+  height: 186px;
+  right: 44px;
+  top: 180px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food1_desc.png");
+  padding: 20px 30px 20px 55px;
+}
+.taste .food2_img {
+  width: 302px;
+  height: 302px;
+  left: 25px;
+  top: 235px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food2_img.png");
+}
+.taste .food2_desc {
+  width: 305px;
+  height: 260px;
+  left: 270px;
+  top: 375px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food2_desc.png");
+  padding: 20px 30px 20px 55px;
+}
+.taste .food3_img {
+  right: 235px;
+  top: 412px;
+  width: 329px;
+  height: 329px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food3_img.png");
+}
+.taste .food3_desc {
+  width: 294px;
+  height: 258px;
+  right: 27px;
+  bottom: 380px;
+  z-index: 1;
+  padding: 20px 30px 20px 55px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food3_desc.png");
+}
+.taste .food4_img {
+  left: 285px;
+  bottom: 255px;
+  width: 330px;
+  height: 330px;
+  padding: 20px 30px 20px 55px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food4_img.png");
+}
+.taste .food4_desc {
+  width: 306px;
+  height: 214px;
+  left: 70px;
+  bottom: 275px;
+  padding: 20px 55px 20px 30px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food4_desc.png");
+}
+.taste .food5_img {
+  right: 105px;
+  bottom: 87px;
+  width: 329px;
+  height: 329px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food5_img.png");
+}
+.taste .food5_desc {
+  width: 440px;
+  height: 164px;
+  left: 352px;
+  bottom: 62px;
+  padding: 20px 55px 20px 30px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/taste/food5_desc.png");
+}
+@-webkit-keyframes animation_food1_img {
+  0% {
+    left: 458px;
+    top: -400px;
+  }
+}
+@-webkit-keyframes animation_food1_desc {
+  0% {
+    right: -500px;
+    top: 180px;
+  }
+}
+@-webkit-keyframes animation_food2_img {
+  0% {
+    left: -500px;
+    top: 100px;
+  }
+}
+@-webkit-keyframes animation_food2_desc {
+  0% {
+    left: -500px;
+    top: 100px;
+  }
+}
+@-webkit-keyframes animation_food3_img {
+  0% {
+    right: -500px;
+    top: 412px;
+  }
+}
+@-webkit-keyframes animation_food3_desc {
+  0% {
+    right: -500px;
+    bottom: 380px;
+  }
+}
+@-webkit-keyframes animation_food4_img {
+  0% {
+    left: -500px;
+    bottom: -100px;
+  }
+}
+@-webkit-keyframes animation_food4_desc {
+  0% {
+    left: -500px;
+    bottom: -100px;
+  }
+}
+@-webkit-keyframes animation_food5_img {
+  0% {
+    right: 105px;
+    bottom: -100px;
+  }
+}
+@-webkit-keyframes animation_food5_desc {
+  0% {
+    left: 352px;
+    bottom: -100px;
+  }
+}
+/*第五部分end*/
+body {
+  /*基础字体类型和大*/
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+  /*******分享按钮********/
+}
+body .container_all {
+  position: relative;
+  width: 100%;
+  /*第三部分：轮播 奇幻色彩begin*/
+  /*第三部分：轮播 奇幻色彩end*/
+  /*第四部分：体验*/
+  /*第六部分 奇幻旅途 begin*/
+  /*第六部分end*/
+  /*第七部分 线路推荐*/
+  /*第八部分 线路推荐*/
+}
+body .container_all .common_content {
+  position: absolute;
+  left: 50%;
+  width: 1160px;
+  height: 100%;
+  margin-left: -580px;
+}
+body .container_all .common_content .part_title {
+  position: absolute;
+  top: -40px;
+  left: 70px;
+  z-index: 111;
+}
+body .container_all .sahara {
+  position: relative;
+  min-width: 1160px;
+}
+body .container_all .sahara .jcarousel {
+  text-align: center;
+}
+body .container_all .sahara .jcarousel ul li .content {
+  width: 707px;
+  height: 134px;
+  margin-top: 200px;
+  display: inline-block;
+  text-align: left;
+  margin-left: -200px;
+}
+body .container_all .sahara .jcarousel ul li .content .title span:nth-child(1) {
+  font-size: 24px;
+}
+body .container_all .sahara .jcarousel ul li .content .title span:nth-child(2) {
+  font-size: 48px;
+}
+body .container_all .sahara .jcarousel ul li .content p {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+}
+body .container_all .sahara .jcarousel ul li .content img {
+  display: inline-block;
+}
+body .container_all .sahara .common_content {
+  top: 0px;
+}
+body .container_all .sahara .common_content .jcarousel-pagination {
+  position: absolute;
+  bottom: 180px;
+  right: 10px;
+  width: 64px;
+  height: 400px;
+  text-align: center;
+}
+body .container_all .sahara .common_content .jcarousel-pagination img {
+  cursor: pointer;
+  display: inline-block;
+}
+body .container_all .feeling {
+  position: relative;
+  height: 720px;
+  min-width: 1160px;
+  width: 100%;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/feeling/bg_feeling.jpg");
+}
+body .container_all .feeling .title {
+  width: 100%;
+  height: 78px;
+  margin-top: 60px;
+  padding-left: 385px;
+}
+body .container_all .feeling .title img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+body .container_all .feeling .main {
+  height: 580px;
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+}
+body .container_all .feeling .main .picture1 {
+  position: absolute;
+  z-index: 1;
+  bottom: 72px;
+  left: 20px;
+}
+body .container_all .feeling .main .picture2 {
+  position: absolute;
+  z-index: 0;
+  right: 20px;
+  top: 20px;
+}
+body .container_all .feeling .main .header {
+  height: 50px;
+  width: 300px;
+  background-color: #b54412;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  transform: skew(-30deg);
+  font-size: 22px;
+}
+body .container_all .feeling .main .header span {
+  display: inline-block;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
+}
+body .container_all .feeling .main p {
+  width: 400px;
+  padding: 10px 0 0 55px;
+}
+body .container_all .feeling .main .describe1 {
+  position: absolute;
+  z-index: 2;
+  left: 390px;
+  bottom: 70px;
+}
+body .container_all .feeling .main .describe2 {
+  position: absolute;
+  z-index: 2px;
+  right: 20px;
+  top: 289px;
+}
+body .container_all .feeling #customs {
+  /*.desc{
+					opacity: 0;
+				}*/
+}
+body .container_all .feeling #customs .picture1 {
+  left: -1000px;
+}
+body .container_all .feeling #customs .picture2 {
+  right: -2000px;
+}
+body .container_all .feeling #customs .describe1 {
+  left: -1000px;
+}
+body .container_all .feeling #customs .describe2 {
+  right: -2000px;
+}
+body .container_all .feeling #risk {
+  /*.desc{
+					opacity: 0;
+				}*/
+}
+body .container_all .feeling #risk .picture1 {
+  left: -1000px;
+}
+body .container_all .feeling #risk .picture2 {
+  right: -2000px;
+}
+body .container_all .feeling #risk .describe1 {
+  left: -1000px;
+}
+body .container_all .feeling #risk .describe2 {
+  right: -2000px;
+}
+body .container_all .journey {
+  position: relative;
+  height: 720px;
+  text-align: center;
+  min-width: 1160px;
+  /*图片上的介绍*/
+}
+body .container_all .journey .head_pic {
+  display: inline-block;
+  margin-top: 400px;
+}
+body .container_all .journey .name {
+  font-size: 30px;
+  margin-top: 10px;
+  color: white;
+}
+body .container_all .journey .desc {
+  margin-top: 16px;
+  display: inline-block;
+  width: 940px;
+  font-size: 16px;
+  text-align: left;
+  border-left: 15px solid #ff7800;
+  padding-left: 20px;
+  color: white;
+}
+body .container_all .journey .desc span {
+  color: #ff7800;
+}
+body .container_all .line_recommand {
+  position: relative;
+  height: 815px;
+  min-width: 1160px;
+  width: 100%;
+}
+body .container_all .line_recommand .desc {
+  position: absolute;
+  width: 449px;
+  height: 300px;
+  top: 82px;
+  right: 290px;
+}
+body .container_all .line_recommand .desc div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0 25px 20px 20px;
+}
+body .container_all .line_recommand .desc .date {
+  font-size: 40px;
+  margin-top: -65px;
+  padding-bottom: 20px;
+  padding-left: -20px;
+  margin-left: -20px;
+  font-weight: normal;
+}
+body .container_all .line_recommand .desc .title {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+body .container_all .line_recommand .desc .content {
+  line-height: 20px;
+  text-align: justify;
+}
+body .container_all .line_recommand .desc .desc1 {
+  z-index: 1;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+}
+body .container_all .line_recommand .desc .desc2 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+}
+body .container_all .line_recommand .desc .desc3 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc2.png") no-repeat;
+}
+body .container_all .line_recommand .desc .desc4 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+}
+body .container_all .line_recommand .desc .desc5 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+}
+body .container_all .line_recommand .desc .desc6 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc3.png") no-repeat;
+}
+body .container_all .line_recommand .desc .desc7 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc2.png") no-repeat;
+}
+body .container_all .line_recommand .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .container_all .line_recommand .bg1 {
+  z-index: 1;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg1.jpg") no-repeat center center / cover;
+}
+body .container_all .line_recommand .bg2 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg2.jpg") no-repeat center center / cover;
+}
+body .container_all .line_recommand .bg3 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg3.jpg") no-repeat center center / cover;
+}
+body .container_all .line_recommand .bg4 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg4.jpg") no-repeat center center / cover;
+}
+body .container_all .line_recommand .bg5 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg5.jpg") no-repeat center center / cover;
+}
+body .container_all .line_recommand .bg6 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg6.jpg") no-repeat center center / cover;
+}
+body .container_all .line_recommand .bg7 {
+  z-index: 0;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg7.jpg") no-repeat center center / cover;
+}
+body .container_all .line_recommand .map {
+  position: absolute;
+  width: 659px;
+  height: 579px;
+  bottom: -20px;
+  left: -59px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/map.png") no-repeat;
+  z-index: 11;
+}
+body .container_all .line_recommand .map i {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/poi.png") no-repeat;
+  cursor: pointer;
+}
+body .container_all .line_recommand .map .poi1 {
+  top: 144px;
+  left: 230px;
+}
+body .container_all .line_recommand .map .poi2 {
+  top: 60px;
+  left: 361px;
+}
+body .container_all .line_recommand .map .poi3 {
+  top: 110px;
+  left: 371px;
+}
+body .container_all .line_recommand .map .poi4 {
+  top: 264px;
+  left: 382px;
+}
+body .container_all .line_recommand .map .poi5 {
+  top: 271px;
+  left: 322px;
+}
+body .container_all .line_recommand .map .poi6 {
+  top: 276px;
+  left: 245px;
+}
+body .container_all .line_recommand .map .poi7 {
+  top: 276px;
+  left: 173px;
+}
+body .container_all .line_recommand .map .tips {
+  position: absolute;
+  width: 43px;
+  height: 55px;
+  background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/tips.png") no-repeat;
+  -webkit-animation: tipJump 1.5s infinite;
+  -moz-animation: tipJump 1.5s infinite;
+  -ms-animation: tipJump 1.5s infinite;
+  -o-animation: tipJump 1.5s infinite;
+}
+@-webkit-keyframes tipJump {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-30%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+@-moz-keyframes tipJump {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-30%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+@-ms-keyframes tipJump {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-30%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+@-o-keyframes tipJump {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-30%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+body .container_all .product {
+  position: relative;
+  height: 1150px;
+  min-width: 1160px;
+  background: -webkit-linear-gradient(0deg, #2777c1 85%, rgba(39, 119, 193, 0));
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(0deg, #2777c1 85%, rgba(39, 119, 193, 0));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(0deg, #2777c1 85%, rgba(39, 119, 193, 0));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(0deg, #2777c1 85%, rgba(39, 119, 193, 0));
+  /* 标准的语法 */
+  margin-top: -200px;
+  z-index: 12;
+  padding-top: 200px;
+}
+body .container_all .product .title {
+  text-align: center;
+  font-family: "MFLingHei_Noncommercial";
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+body .container_all .product .common_content {
+  padding-left: 100px;
+  height: 0px;
+}
+body .share-box {
+  right: 0px;
+  top: 30px;
+}
+body .share-box .share-btn {
+  color: white;
+}

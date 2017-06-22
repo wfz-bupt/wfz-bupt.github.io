@@ -1,0 +1,13 @@
+{
+  "name": "pc",
+  "version": "1.0",
+  "description": "pc examples",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "*"
+  }
+}

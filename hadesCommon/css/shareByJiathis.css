@@ -1,0 +1,12 @@
+/* 分享 */
+.share-box { position: absolute; z-index: 999; display: inline-block; vertical-align: middle; width: 60px; height: 40px; font-size: 0; top: 66px; right: 28px; margin-left: 430px; text-align: center; border-bottom: 10px solid transparent; }
+.share-box .share-btn { font-size: 14px; line-height: 30px; display: block; color: #999; white-space: nowrap; text-decoration: none;  background: rgba(255, 255, 255, 0.5); border-radius: 6px; cursor: pointer;}
+.share-box:hover .share-btn { background-color: rgba(255, 255, 255, .6); box-shadow: 0 0 5px rgba(0, 0, 0, .2); }
+.share-box .share-content { display: none; position: absolute; left: 0; top: 40px; font-size: 14px; padding: 0 0 10px; width: 60px; background-color: rgba(255, 255, 255, .8); background-color: #FFF\0; filter: alpha(opacity=80); }
+.share-box:hover .share-content { display: block; }
+.share-box .share-content a { margin:10px auto 0; cursor: pointer; display:block; width: 24px; height: 24px; background: url(//fed.static.qyer.com/core/web/common/ui/share/share24.png) no-repeat left center;}
+.share-box .share-content a:hover { opacity: .8; }
+.share-box .share-content a.tsina { background-position: 0 0;}
+.share-box .share-content a.qzone { background-position: -68px 0;}
+.share-box .share-content a.weixin { background-position: -170px 0;}
+.share-box .share-content .pointer2 { position: absolute; left: 50%; top: -20px; margin-left: -10px; width: 0; height: 0; overflow: hidden; border: 10px solid transparent; border-bottom-color: rgba(255, 255, 255, 0.8); border-bottom-color: #FFF\0; }

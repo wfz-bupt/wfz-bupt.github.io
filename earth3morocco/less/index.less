@@ -1,0 +1,440 @@
+@import "slide.less";
+@import "product.less";
+@import "part1_2.less";
+@import "part5.less";
+body{
+	/*基础字体类型和大*/
+	font-family: "微软雅黑","华文细黑",Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	.container_all{
+		position: relative;
+		width: 100%;
+		.common_content{
+		    position: absolute;
+		    left: 50%;
+		    width: 1160px;
+		    height: 100%;
+		    margin-left: -580px;
+		    .part_title{
+		    	position: absolute;
+		    	top:-40px;
+		    	left: 70px;
+		    	z-index: 111;
+		    }
+		}
+		/*第三部分：轮播 奇幻色彩begin*/
+		.sahara{
+			position: relative;	
+			min-width: 1160px;
+			.jcarousel{
+				text-align: center;
+				ul li .content{
+					width: 707px;
+					height: 134px;
+					margin-top: 200px;
+					display: inline-block;
+					text-align: left;
+					margin-left: -200px;
+					.title{
+						span:nth-child(1){
+							font-size: 24px;
+						}
+						span:nth-child(2){
+							font-size: 48px;
+						}
+
+					}
+					p{
+						font-size: 16px;
+						line-height: 26px;
+						text-align: justify;
+					}
+					img{
+						display: inline-block;
+					}
+				}
+			}
+			.common_content{
+				top: 0px;
+				.jcarousel-pagination{
+					position: absolute;
+					bottom: 180px;
+					right: 10px;
+					width: 64px;
+					height: 400px;
+					text-align: center;
+					img{
+						cursor: pointer;
+						display: inline-block;
+					}
+				}
+			}
+		}
+		/*第三部分：轮播 奇幻色彩end*/
+		
+		/*第四部分：体验*/
+		.feeling{
+			position: relative;
+			height: 720px;
+			min-width: 1160px;
+			width: 100%;
+			background: url("//static.qyer.com/models/project/hades/earth3morocco/images/feeling/bg_feeling.jpg");
+			.title{
+				width: 100%;
+				height: 78px;
+				margin-top:60px;
+				padding-left: 385px;
+				img{
+					margin-right: 20px;
+					cursor: pointer;
+				}
+			}
+			.main{
+				height: 580px;
+				position: absolute;
+				width: 100%;
+				overflow-x: hidden;
+				.picture1{
+					position: absolute;
+					z-index: 1;
+					bottom: 72px;
+					left: 20px;
+				}
+				.picture2{
+					position: absolute;
+					z-index: 0;
+					right: 20px;
+					top: 20px;
+				}
+				.header{
+					height: 50px;
+					width: 300px;
+					background-color: rgb(181,68,18);
+					text-align: center;
+					line-height: 50px;
+					-webkit-transform: skew(-30deg);
+					-moz-transform: skew(-30deg);
+					-o-transform: skew(-30deg);
+					-ms-transform: skew(-30deg);
+					transform: skew(-30deg);
+					font-size: 22px;
+					span{
+						display: inline-block;
+						-webkit-transform: skew(30deg);
+						-moz-transform: skew(30deg);
+						-o-transform: skew(30deg);
+						-ms-transform: skew(30deg);
+						transform: skew(30deg);
+					}
+				}
+				p{
+					width: 400px;
+					padding: 10px 0 0 55px;
+				}
+				.describe1{
+					position: absolute;
+					z-index: 2;
+					left: 390px;
+					bottom: 70px;
+				}
+				.describe2{
+					position: absolute;
+					z-index: 2px;
+					right: 20px;
+					top: 289px;
+				}
+			}
+			#customs{
+				.picture1{
+					left: -1000px;
+				}
+				.picture2{
+					right: -2000px;
+				}
+				/*.desc{
+					opacity: 0;
+				}*/
+				.describe1{
+					left: -1000px;
+				}
+				.describe2{
+					right: -2000px;
+				}
+			}
+			#risk{
+				.picture1{
+					left: -1000px;
+				}
+				.picture2{
+					right: -2000px;
+				}
+				/*.desc{
+					opacity: 0;
+				}*/
+				.describe1{
+					left: -1000px;
+				}
+				.describe2{
+					right: -2000px;
+				}
+			}
+
+		}
+		
+		
+
+		/*第六部分 奇幻旅途 begin*/
+		.journey{
+			position: relative;
+			height: 720px;
+			text-align: center;
+			min-width: 1160px;
+			/*图片上的介绍*/
+		    .head_pic{
+			    display: inline-block;
+			    margin-top: 400px;
+			}
+			.name{
+			  font-size: 30px;
+			  margin-top: 10px;
+			  color: white;
+			}
+			.desc{
+			  margin-top: 16px;
+			  display: inline-block;
+			  width: 940px;
+			  font-size: 16px;
+			  text-align: left;
+			  border-left: 15px solid rgb(255,120,0);
+			  padding-left: 20px;
+			  color: white;
+			}
+			.desc span{
+			    color: rgb(255,120,0);
+			}
+		}
+		/*第六部分end*/
+		
+		/*第七部分 线路推荐*/
+		.line_recommand{
+			position: relative;
+			height: 815px;
+			min-width: 1160px;
+			width: 100%;
+			.desc{
+				position: absolute;
+				width: 449px;
+				height: 300px;
+				top: 82px;
+				right: 290px;
+				div{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					padding: 0 25px 20px 20px;
+				}
+				.date{
+					font-size: 40px;
+					margin-top: -65px;
+					padding-bottom: 20px;
+					padding-left: -20px;
+					margin-left: -20px;
+					font-weight: normal;
+				}
+				.title{
+					font-size: 18px;
+					padding-bottom: 10px;
+				}
+				.content{
+					line-height: 20px;
+					text-align: justify;
+				}
+				.desc1{
+					z-index: 1;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+				}
+				.desc2{
+					z-index: 0;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+				}.desc3{
+					z-index: 0;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc2.png") no-repeat;
+				}.desc4{
+					z-index: 0;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+				}
+				.desc5{
+					z-index: 0;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc1.png") no-repeat;
+				}.desc6{
+					z-index: 0;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc3.png") no-repeat;
+				}.desc7{
+					z-index: 0;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/desc2.png") no-repeat;
+				}
+			}
+			.bg{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			.bg1{	
+				z-index: 1;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg1.jpg") no-repeat center center/cover;
+			}
+			.bg2{
+				z-index: 0;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg2.jpg") no-repeat center center/cover;
+			}
+			.bg3{	
+				z-index: 0;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg3.jpg") no-repeat center center/cover;
+			}
+			.bg4{
+				z-index: 0;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg4.jpg") no-repeat center center/cover;
+			}
+			.bg5{	
+				z-index: 0;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg5.jpg") no-repeat center center/cover;
+			}
+			.bg6{
+				z-index: 0;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg6.jpg") no-repeat center center/cover;
+			}
+			.bg7{	
+				z-index: 0;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/bg7.jpg") no-repeat center center/cover;
+			}
+			.map{
+				position: absolute;
+				width: 659px;
+				height: 579px;
+				bottom: -20px;
+				left: -59px;
+				background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/map.png") no-repeat;
+				z-index: 11;
+				i{
+					position: absolute;
+					width: 48px;
+					height: 48px;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/poi.png") no-repeat;
+					cursor: pointer;
+				}
+				.poi1{
+					top: 144px;
+					left: 230px;
+				}
+				.poi2{
+					top: 60px;
+					left: 361px;
+				}.poi3{
+					top: 110px;
+					left: 371px;
+				}.poi4{
+					top: 264px;
+					left: 382px;
+				}.poi5{
+					top: 271px;
+					left: 322px;
+				}.poi6{
+					top: 276px;
+					left: 245px;
+				}.poi7{
+					top: 276px;
+					left: 173px;
+				}
+				.tips{ 
+					position: absolute;
+					width: 43px;
+					height: 55px;
+					background: url("//static.qyer.com/models/project/hades/earth3morocco/images/line/tips.png") no-repeat;
+					-webkit-animation: tipJump 1.5s infinite;
+					-moz-animation:tipJump 1.5s infinite;
+					-ms-animation:tipJump 1.5s infinite;
+					-o-animation:tipJump 1.5s infinite;
+				}
+				@-webkit-keyframes tipJump {
+					0%{
+						-webkit-transform: translateY(0%)
+					}
+					50%{
+						-webkit-transform: translateY(-30%)
+					}
+					100%{
+						-webkit-transform: translateY(0%)
+					}
+				}
+				@-moz-keyframes tipJump {
+					0%{
+						-webkit-transform: translateY(0%)
+					}
+					50%{
+						-webkit-transform: translateY(-30%)
+					}
+					100%{
+						-webkit-transform: translateY(0%)
+					}
+				}
+				@-ms-keyframes tipJump {
+					0%{
+						-webkit-transform: translateY(0%)
+					}
+					50%{
+						-webkit-transform: translateY(-30%)
+					}
+					100%{
+						-webkit-transform: translateY(0%)
+					}
+				}
+				@-o-keyframes tipJump {
+					0%{
+						-webkit-transform: translateY(0%)
+					}
+					50%{
+						-webkit-transform: translateY(-30%)
+					}
+					100%{
+						-webkit-transform: translateY(0%)
+					}
+				}
+			}
+		}
+
+		/*第八部分 线路推荐*/
+		.product{
+			.title{
+				text-align: center;
+				font-family: "MFLingHei_Noncommercial";
+				font-size: 40px;
+				padding-bottom: 40px;
+			}
+			.common_content{
+				padding-left: 100px;
+				height: 0px;
+			}
+			position: relative;
+			height: 1150px;
+			min-width: 1160px;
+			background: -webkit-linear-gradient(0deg,rgba(39,119,193,1) 85%, rgba(39,119,193,0)); /* Safari 5.1 - 6.0 */
+		  background: -o-linear-gradient(0deg,rgba(39,119,193,1) 85%, rgba(39,119,193,0)); /* Opera 11.1 - 12.0 */
+		  background: -moz-linear-gradient(0deg,rgba(39,119,193,1) 85%, rgba(39,119,193,0)); /* Firefox 3.6 - 15 */
+		  background: linear-gradient(0deg,rgba(39,119,193,1) 85%, rgba(39,119,193,0)); /* 标准的语法 */
+		  margin-top: -200px;
+		  z-index: 12;
+		  padding-top: 200px;
+		}
+	}
+	/*******分享按钮********/
+	.share-box{
+	  right:0px;
+	  top: 30px;
+	}
+	.share-box .share-btn{
+	  color: white;
+	}
+
+}
+
